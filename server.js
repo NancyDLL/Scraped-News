@@ -1,4 +1,4 @@
-// Require dependencies
+// Dependencies
 var express = require("express");
 var exphbs = require("express-handlebars");
 var mongoose = require("mongoose");
@@ -27,10 +27,9 @@ app.use(bodyParser.json());
 // Have every request go through route middleware
 app.use(routes);
 
-// If deployed, use the deployed database or local
+// Use the deployed database or local
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_7w0wpf68:mpamde4bkka7of440cjp56vn4c@ds111336.mlab.com:11336/heroku_7w0wpf68";
 
-// Set mongoose to leverageJavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
