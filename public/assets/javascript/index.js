@@ -29,21 +29,23 @@ $(document).ready(function() {
   function createPanel(article) {
     var panel = $(
       [
+        "<div class='col-md-4'>",
         "<div class='panel panel-default'>",
         "<div class='panel-heading'>",
-        "<h3>",
+        "<h4>",
         "<a class='article-link' target='_blank' href='" + article.url + "'>",
         article.headline,
         "</a>",
         "<a class='btn btn-success save'>",
         "Save Article",
         "</a>",
-        "</h3>",
-        "</div>",
+        "</h4>",
+        "</div>",//panel-heading
         "<div class='panel-body'>",
         article.summary,
-        "</div>",
-        "</div>"
+        "</div>",//panel-body
+        "</div>",//panel panel-default
+        "</div>"//col-md-4
       ].join("")
     );
     panel.data("_id", article._id);
