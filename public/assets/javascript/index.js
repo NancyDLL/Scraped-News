@@ -29,7 +29,6 @@ $(document).ready(function() {
   function createPanel(article) {
     var panel = $(
       [
-        "<div class='col-md-4'>",
         "<div class='panel panel-default'>",
         "<div class='panel-heading'>",
         "<h4>",
@@ -40,12 +39,11 @@ $(document).ready(function() {
         "Save Article",
         "</a>",
         "</h4>",
-        "</div>",//panel-heading
+        "</div>",
         "<div class='panel-body'>",
         article.summary,
-        "</div>",//panel-body
-        "</div>",//panel panel-default
-        "</div>"//col-md-4
+        "</div>",
+        "</div>"
       ].join("")
     );
     panel.data("_id", article._id);

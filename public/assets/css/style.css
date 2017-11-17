@@ -5,7 +5,7 @@ html {
 
 body {
   margin-bottom: 80px;
-  background-image: url("../images/paper.png");
+  background-color: lightgray;
 }
 
 .footer {
@@ -19,10 +19,6 @@ body {
 
 .navbar {
   margin-bottom: 0;
-}
-
-.panel.panel-default{
-  height: 175px;
 }
 
 .panel.panel-default .panel-heading {
